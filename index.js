@@ -1,5 +1,5 @@
 //For Opening Menu
-document.querySelector(".cross").style.display = "none";
+// document.querySelector(".cross").style.display = "none";
 document.querySelector(".ham").addEventListener("click", () => {
   document.querySelector(".sidebar2").classList.toggle("sidebargo");
   if (document.querySelector(".sidebar2").classList.contains("sidebargo")) {
@@ -22,7 +22,8 @@ document.querySelector(".ham").addEventListener("click", () => {
 //     document.querySelector(".cross").style.display = "inline";
 //   }
 // });
-//For exiting Menu
+
+// For exiting Menu
 document.querySelector(".cross").addEventListener("click", () => {
   document.querySelector(".sidebar2").classList.toggle("sidebargo");
   if (document.querySelector(".sidebar2").classList.contains("sidebargo")) {
