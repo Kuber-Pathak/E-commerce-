@@ -8,6 +8,7 @@
 .section__container {
     max-width: 1500px;
     margin: auto;
+    margin-left:10vw;
     margin-right: 71px;
     padding: 5rem 1rem;
   }
@@ -77,10 +78,7 @@ header{
     
 }
 .header{
-    overflow: auto;
-    height:100%;
-    position: fixed;
-    width: 100%;
+    min-width: 100%;
     top: 0;
     right: 0;
     display: flex;
@@ -312,7 +310,6 @@ header{
     color: black;
     margin-bottom: 0.5rem;
     margin: 10px;
-    z-index: -1;
 }
 .content-texts a{
     color: black;
@@ -409,6 +406,7 @@ header{
     .content-box a{
         font-size:1rem;
     }
+  
 
 }
 @media (max-width: 47.99em){
