@@ -1,4 +1,5 @@
 //For Opening Menu
+
 // document.querySelector(".cross").style.display = "none";
 document.querySelector(".ham").addEventListener("click", () => {
   document.querySelector(".sidebar2").classList.toggle("sidebargo");
