@@ -66,8 +66,8 @@
         </div>
       </div>
     </header>
+  
       <div class="content">
-        
         <div class="top">
           <div class="main">
             <a href="index.html" class="logo"
@@ -85,7 +85,6 @@
             >
           </div>
         </div>
-    
         <div class="middle">
           <div class="contents">
               <div class="content-texts">
@@ -182,6 +181,17 @@
         </ul>
       </div>
     </footer>
+
+    <!-- added here -->
+    <script type="text/javascript">
+      window.addEventListener("scroll",function(){  
+        var header_right  =document.querySelector(".top");
+        var header_logo = document.querySelector(".main");
+        header_right.classList.toggle("sticky",window.scrollY > 0);
+        header_logo.classList.toggle("sticky",window.scrollY > 0);
+      })  
+    </script>
+    <!-- up to here -->
     <script src="index.js"></script>
   </body>
 </html>
