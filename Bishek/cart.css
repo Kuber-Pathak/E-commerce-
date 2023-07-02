@@ -502,7 +502,8 @@ header{
 
     table{
         width: 100%;
-        border-collapse: collapse;
+        /* border-collapse: collapse; */
+        margin-left: 35px;
     }
 
     .cart-info{
@@ -536,11 +537,13 @@ header{
         width: 80px;
         height: 80px;
         margin-right: 10px ;
+        margin-left: -44px;
     }
 
     .total-price{
         display: flex;
         justify-content: flex-end;
+        margin-right: -35px;
     }
 
     .total-price table{
@@ -568,3 +571,7 @@ header{
 /* upto here */
 
 
+.font{
+    font-size: 1rem;
+    padding-top: 4px;
+}

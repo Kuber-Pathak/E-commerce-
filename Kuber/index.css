@@ -371,11 +371,18 @@ header{
   }
   
   .musthave__card {
+    position: relative;
     display: grid;
     gap: 0.5rem;
     color: var(--text-dark);
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.2s ease;
   }
-  
+  .musthave__card:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+  }
   .musthave__card h4 {
     font-size: 1rem;
     font-weight: 600;
@@ -391,8 +398,22 @@ header{
     font-weight: 400;
     color: var(--text-light);
   }
-  
-
+  .add-cart{
+    width: 40px;
+    height: 40px; 
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    cursor: pointer;
+}
+/* .add-cart:before{
+    padding: 0 8px;
+} */
 /* Media Queries for Navbar */
 @media (min-width: 48em) and (max-width: 56.3025em){
     .sidebar{
@@ -424,7 +445,7 @@ header{
         font-size: 1.5rem;
     }
     .content-box a{
-        font-size:1rem;
+        font-siz8:1rem;
     }
   
 
