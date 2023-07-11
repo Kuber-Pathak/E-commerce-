@@ -4,14 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
-    <link rel="stylesheet" href="feedback.css">
-</head>
-<body>
+    <link rel="stylesheet" href="feedback.css" />
+
+    <script
+      src="https://kit.fontawesome.com/5a78363638.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <div class="sidebars">
+          <div class="sidebar2 sidebargo">
+            <ul>
+              <li class="first-cross">
+                <img
+                  src="Images/[removal.ai]_tmp-6483fc84e6b7a.png"
+                  alt=""
+                 
+                  class="cross"
+                  style="width: 42px;"
+                />
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-magnifying-glass" id="search-bar-2"
+                    ><span> Search</span></i
+                  ></a
+                >
+              </li>
+              <br />
+              <hr />
+              <div class="list">
+                <ul>
+                  <li><a href="#">Bags</a></li>
+                  <li><a href="#">Casual Wear</a></li>
+                  <li><a href="#">Fine Jewelry</a></li>
+                  <li><a href="#">Inner Wears</a></li>
+                  <li><a href="#">Party Wear</a></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+         
+        </div>
+      </header>
+      <div class="content">
+        
+        <div class="top">
+          <div class="main">
+            <a href="index.html" class="logo"
+              ><img
+                id="logo"
+                src="Images/[removal.ai]_8cbff65f-12c5-4bcf-a904-d44551a022651.png"
+                alt="logo "
+                style="width: 180px;height: 60px;"
+            /></a>
+          </div>
+          <div class="right">
+            <a href="#" class="user"><i class="fa-solid fa-user"></i> LOGIN</a>
+            <a href="#" class="cart"
+              ><i class="fa-solid fa-bag-shopping"></i> BAG</a
+            >
+          </div>
+        </div>
+    
+        <div class="middle">
+          
     <section class="feedback-form">
         <div class="feedback-heading">
             <h2 class="heading-section">Contact Us</h2>
           </div>
-            <div class="wrapper img" style="background-image: url(Images/img.jpg);">
               <div class="row">              
                   <div class="contact-wrap ">
                     <h3 class="seconday-heading" >Get in touch with us</h3>
@@ -52,5 +115,13 @@
   </div>
 </div>
 </section>
+<script type="text/javascript">
+  window.addEventListener("scroll",function(){  
+    var header_right  =document.querySelector(".top");
+    var header_logo = document.querySelector(".main");
+    header_right.classList.toggle("sticky",window.scrollY > 0);
+    header_logo.classList.toggle("sticky",window.scrollY > 0);
+  })  
+</script>
 </body>
 </html>
