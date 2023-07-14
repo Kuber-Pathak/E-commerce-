@@ -300,7 +300,7 @@ header{
     margin-top: 145px;
     height: 55vh;
     /* background-color: #f1faff; */
-    background-color: #d6e7ed;
+    
   
 }
 /* up to here i guess */
@@ -309,7 +309,7 @@ header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
-  
+    background-color: #d6e7ed;
 }
 .banner-img{
     position: relative;
@@ -322,9 +322,8 @@ header{
 .content-texts{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: center;
-    height: 30vh;
 }
 .content-texts h2{
     font-weight: 400;
@@ -346,7 +345,9 @@ header{
 }
 
 /* For must have section */
-
+.musthave__container{
+    margin-top: 160px;
+}
 .musthave__nav {
     display: flex;
     align-items: center;
@@ -354,6 +355,7 @@ header{
     gap: 2rem;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    
   }
   
   .musthave__nav a {
@@ -389,12 +391,15 @@ header{
   .musthave__card h4 {
     font-size: 1rem;
     font-weight: 600;
+    padding-top: 10px;
+    padding-left: 10px;
   }
   
   .musthave__card p {
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 1rem;
+    padding: 0 10px;
   }
   
   .musthave__card p del {
@@ -417,17 +422,66 @@ header{
 /* .add-cart:before{
     padding: 0 8px;
 } */
+/* for exclusive-items section  */
+.exclusive-contents{
+    margin-top:165px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #d6e7ed;
+    justify-items: center;
+}
+.exclusive-img{
+    position: relative;
+}
+.exclusive-img img {
+    max-width: 400px;
+    object-fit: contain;
+    object-position: center;
+}
+.exclusive-content-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left:75px ;
+}
 
+.exclusive-content-texts h2{
+    font-weight: 450;
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 0.5rem;
+    margin: 10px;
+}
+.exclusive-content-texts p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 0.5rem;
+    margin: 30px;
+}
+.exclusive-content-texts a{
+    color: black;
+    letter-spacing: 0.1rem;
+    font-size: 1.25rem;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+}
+.exclusive-content-texts a:hover{
+    text-decoration: underline;
+}
 /* for story section */
 .story{
     margin-top: 175px;
     width: 100%;
-    height: 20%;
+    /* height: 20%; */
     /* text-align:center; */
     /* height: 55vh; */
     background-color: #d6e7ed;
     display: flex;
     justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .right-content{
@@ -438,7 +492,7 @@ header{
 }
 .right-top{
     text-align: center;
-    padding-bottom: 15px;
+    padding: 15px;
 }
 .right-text{
     text-align: center;
@@ -469,11 +523,11 @@ width: 50%;
     text-decoration: underline;
 }
 .story-image{
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     height: 100%;
     opacity: 0.7;
 }
-
 
 /* for templates section  */
 .templates{
@@ -667,6 +721,9 @@ width: 50%;
     .bottom-pannel{
         height: 23vh;
     }
+    .exclusive-content-texts{
+        margin-left:0 ;
+    }
 }
 @media (max-width: 47.99em){
     .sidebar{
@@ -749,6 +806,9 @@ width: 50%;
     }
     .bottom-pannel{
         height: 23vh;
+    }
+    .exclusive-content-texts{
+        margin-left:0 ;
     }
 }
 
