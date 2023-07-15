@@ -69,10 +69,10 @@ body{
     /* background-color: rgb(248 244 244); */
     background-color: var(--white);
     /* z-index: 111; */
-    height: 80px;
+    height: 90px;
 }
 .sticky .right{
-    margin-bottom: 34px;
+    margin-bottom: 44px;
 }
 /* upto here */
 
