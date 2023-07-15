@@ -63,10 +63,6 @@ body{
     min-height:100% ;
     background-color: #f5f5f5;
 }
-header{
-    position: fixed;
-    z-index: 1111111;
-}
 
 /* added this also */
 .sticky{
@@ -80,31 +76,64 @@ header{
 }
 /* upto here */
 
-/* Navbar Styling */
+
+
+/* For Sidebar  */
+.header{
+    display: flex;
+}
+header{
+    position: relative;
+}
+.icons{
+    justify-content: end;
+    padding-top: 20px;
+    padding-left:20px ;
+    font-size: 1.2rem;
+}
+.display{
+    display: flex;
+}
+
+.cross{
+    margin-top: -8px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+.search-bar{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+}
+
 .sidebar{
-    /* position: fixed; */
+    position: fixed;
     background-color: white;
     width:72px;
     height: 100vh;
     scroll-behavior: fixed;
+    z-index: 3;
     
 }
-.header{
-    min-width: 100%;
-    top: 0;
-    right: 0;
+.list-searbar{
     display: flex;
+    gap: 0.6rem;
 }
-
-
-/* For Sidebar  */
-.sidebars{
-    display: flex;
-    justify-content: center;
+#list-searchbar{
+position: relative;
+bottom: 5px;
+font-size: 1.2rem;
 }
-.sidebargo{
-    transform: translate(-443px,0px);
-    position: absolute;
+.sidebar-list{
+    display: none;
+}
+.list{
+    display: block;
+}
+.sidebar_expand{
+    /* width: 10%; */
+    min-width: 20vw;
 }
 .sidebar nav {
     padding: 10px 0px;
@@ -113,47 +142,10 @@ header{
       list-style: none;
       padding: 20px;
   }
-  .ham{
-    margin-left: -5px;
-    font-size: 1.2rem;
-    margin-top: -22px;
+.ham{
+    margin-left: -3px;
+    margin-top: -18px;
     cursor: pointer;
-}
-
-
-/* for sidebar2 */
-.sidebar2{
- width: 20vw;
- background-color: white;
- height: 100vh;
-}
-.sidebar2 ul li{
-    list-style: none;
-}
-.first-cross{
-    display: flex;
-    flex-direction: row-reverse;
-}
-.sidebar2 ul li a{
-    text-decoration: none;
-    color: #1a1a1a;
-}
-.cross{
-    cursor: pointer;
-   
-}
-#search-bar-2{
-    cursor: pointer;
-    margin-top: 55px;
-    margin-left: 60px;
-    font-size: 1.2rem;
-    
-}
-#search-bar-2 span{
-    cursor: pointer;
-    font-size :0.9rem;
-    padding: 1rem;
-    
 }
 .list ul li{
     list-style: none;
@@ -169,12 +161,9 @@ header{
 .list ul  li a:hover{
     text-decoration: underline;
 }
-#search-bar{
-    font-size: 1.2rem;
-    margin-top: 33vh;
-    cursor: pointer;
+.cross-bottom{
+    display: none;
 }
-
 /* for top */
 .content{
     width: 100%;
@@ -275,13 +264,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .first-item img{
     margin-top: -5px;
 }
-.first-item span{
-    cursor: pointer;
-}
+
 .search-bar-3{
     display: flex;
     align-items: center;  
@@ -671,15 +659,17 @@ width: 50%;
 @media (min-width: 48em) and (max-width: 56.3025em){
     .sidebar{
         display: none;
+        min-width: 40%;
+    }
+    .sidebar_expand{
+        display: block;
+        
     }
     /* .main{
         display: none;
     }*/
     .right{
         display: none;
-    } 
-    .sidebar2{
-        min-width: 50%;
     }
     .lower-box{
         left: 50%;
@@ -728,6 +718,14 @@ width: 50%;
 @media (max-width: 47.99em){
     .sidebar{
         display: none;
+        text-align: center;
+    }
+    .sidebar_expand{
+        display: block;
+        width: 100%;
+    }
+    .list-searbar{
+        justify-content: center;
     }
     /* .main{
         display: none;
@@ -735,13 +733,6 @@ width: 50%;
     .right{
         display: none;
     } 
-    .sidebar2{
-        width: 100vw;
-        text-align: center;
-    }
-    #search-bar-2{
-        margin-right: 55px;
-    }
     .lower-box{
        display: flex;
        flex-direction: row;
