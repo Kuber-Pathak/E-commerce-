@@ -1,3 +1,3 @@
-# Rental_website
+# Ecommerce_website
 First Project 
 Not complete yet
